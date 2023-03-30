@@ -33,6 +33,7 @@ manager_selector ='body > div > div > div.ng-scope > div > div.borderM.box.padT2
 def open_site(url):
     driver =webdriver.Chrome()
     driver.get(url)
+    driver.maximize_window()
     time.sleep(4)
     return driver
 
